@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+	"omnitrace",
+	"omnitrace-image",
+	"omnitrace-math",
+	"omnilive",
+	"omnitrace-task",
+	"parameter-const",
+]

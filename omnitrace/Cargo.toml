@@ -1,0 +1,26 @@
+[package]
+name = "omnitrace"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+inline = []
+parallel = ["dep:rayon"]
+task = ["dep:omnitrace-task"]
+
+[dependencies.omnitrace-task]
+path = "../omnitrace-task"
+optional = true
+
+[dependencies.rayon]
+version = "1.7.0"
+optional = true
+
+[dependencies.fxhash]
+version = "0.2.1"
+
+[dependencies.once_cell]
+version = "1.17.1"
+
+[dependencies.paste]
+version = "1.0.12"

@@ -1,0 +1,18 @@
+[package]
+name = "omnitrace-math"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+color = ["dep:palette"]
+
+[dependencies.vek]
+version = "0.15.10"
+default-features = false
+features = ["std", "repr_simd"]
+
+[dependencies.palette]
+version = "0.7.1"
+optional = true
+default-features = false
+features = ["std", "approx"]

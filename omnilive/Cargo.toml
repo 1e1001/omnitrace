@@ -1,0 +1,16 @@
+[package]
+name = "omnilive"
+version = "0.1.0"
+edition = "2021"
+
+# [features]
+# image = ["dep:omnitrace-image"]
+#
+# [dependencies.omnitrace]
+# path = "../omnitrace"
+# features = ["inline", "parallel"]
+#
+# [dependencies.omnitrace-image]
+# path = "../omnitrace-image"
+# features = ["inline", "parallel"]
+# optional = true

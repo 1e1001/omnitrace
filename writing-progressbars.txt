@@ -1,0 +1,29 @@
+omnitrace progress bars:
+- seperate crate, enable via feature in omnitrace
+- local bar handlers
+- tasks with one action inside
+
+let task = omnitrace_task::task("Name", |task| {
+	task.begin("Step 1", Some(10));
+	for _ in 0..10 {
+		task.step(1);
+	}
+	omnitrace_task::current().begin("Step 2", None);
+	"result"
+});
+while let Some(event) = task.recv_event() {
+	// process task event
+}
+
+no 'statics: via transmute? unsafe if you mem::forget it
+
+renderer api:
+	event-based
+		block until event (returns false on close)
+		current name / section
+		pop previous section (one-time)
+	poll-based
+		update function
+		is complete?
+		current name / section
+		pop previous section (one-time)

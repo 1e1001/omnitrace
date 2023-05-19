@@ -1,0 +1,21 @@
+[package]
+name = "omnitrace-image"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+inline = []
+parallel = ["omnitrace/parallel"]
+
+[dependencies.omnitrace]
+path = "../omnitrace"
+
+[dependencies.omnitrace-math]
+path = "../omnitrace-math"
+features = ["color"]
+
+[dependencies.png]
+version = "0.17.8"
+
+[dependencies.parameter-const]
+path = "../parameter-const"
