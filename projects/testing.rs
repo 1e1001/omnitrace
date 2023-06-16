@@ -1,3 +1,5 @@
+//+omnilive
+// mode = "image"
 use omnilive::prelude::*;
 
 #[omnilive::main]

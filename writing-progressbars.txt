@@ -15,15 +15,17 @@ while let Some(event) = task.recv_event() {
 	// process task event
 }
 
-no 'statics: via transmute? unsafe if you mem::forget it
+no 'static-s: via transmute? unsafe if you mem::forget it
 
 renderer api:
 	event-based
 		block until event (returns false on close)
+		consume & return output
 		current name / section
-		pop previous section (one-time)
+		pop previous sections (one-time)
 	poll-based
-		update function
-		is complete?
+		update function (non-block until event)
+		consume & return output
+		-> is still running?
 		current name / section
-		pop previous section (one-time)
+		pop previous sections (one-time)

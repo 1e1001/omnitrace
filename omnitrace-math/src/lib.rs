@@ -18,12 +18,15 @@ pub mod prelude {
 		num_traits::{
 			real::Real, AsPrimitive, Bounded, CheckedAdd, CheckedDiv, CheckedEuclid, CheckedMul,
 			CheckedNeg, CheckedRem, CheckedShl, CheckedShr, CheckedSub, Euclid, Float, FloatConst,
-			FromPrimitive, Inv, MulAdd, MulAddAssign, Num, NumAssign, NumAssignOps,
-			NumAssignRef, NumCast, NumOps, NumRef, One, Pow, PrimInt, RefNum, Saturating,
-			SaturatingAdd, SaturatingMul, SaturatingSub, Signed, ToPrimitive, Unsigned,
-			WrappingAdd, WrappingMul, WrappingNeg, WrappingShl, WrappingShr, WrappingSub, Zero,
+			FromPrimitive, Inv, MulAdd, MulAddAssign, Num, NumAssign, NumAssignOps, NumAssignRef,
+			NumCast, NumOps, NumRef, One, Pow, PrimInt, RefNum, Saturating, SaturatingAdd,
+			SaturatingMul, SaturatingSub, Signed, ToPrimitive, Unsigned, WrappingAdd, WrappingMul,
+			WrappingNeg, WrappingShl, WrappingShr, WrappingSub, Zero,
 		},
-		ops::{Clamp, Clamp01, ClampMinus1, IsBetween, IsBetween01, Lerp, MulAdd as VekMulAdd, Slerp, Wrap},
+		ops::{
+			Clamp, Clamp01, ClampMinus1, IsBetween, IsBetween01, Lerp, MulAdd as VekMulAdd, Slerp,
+			Wrap,
+		},
 		quaternion::Quaternion,
 		vec::{Extent2, Extent3, Vec2, Vec3, Vec4},
 	};
